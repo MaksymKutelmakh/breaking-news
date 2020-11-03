@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PagesModule } from './pages/pages.module';
 import { HttpModule } from './services/services.module';
+import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
 
 
 @NgModule({
@@ -15,7 +16,10 @@ import { HttpModule } from './services/services.module';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    HttpModule
+    HttpModule,
+    LoggerModule.forRoot({
+      level: NgxLoggerLevel.DEBUG,
+      serverLogLevel: NgxLoggerLevel.ERROR})
   ],
   providers: [],
   bootstrap: [AppComponent]

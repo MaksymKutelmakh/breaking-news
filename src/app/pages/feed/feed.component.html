@@ -1,0 +1,17 @@
+<h1 style="text-align: center;">Blogs</h1>
+<div class="users">
+    <div class="user" *ngFor="let user of users">
+        <div class="user-name">{{user.name}}</div>
+        <div class="user-info">
+            <div class="email">
+                <div class="info-name">Email:</div>
+                <div class="user-email">{{user.email}}</div>
+            </div>
+            <div class="phone">
+                <div class="info-name">Phone:</div>
+                <div class="user-phone">{{user.phone}}</div>
+            </div>
+        </div>
+        <button class="btn" (click)="viewPosts(user)">Check posts</button>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+.article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    .article-title {
+        font-size: 20pt;
+        font-weight: bold;
+    }
+    .article-body {
+        width: 50%;
+    }
+}

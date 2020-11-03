@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
+import { AuthenticationModule } from './authentication/authentication.module';
+import { FeedModule } from './feed/feed.module';
 
 
 @NgModule({
-  imports: [],
-  declarations: [
+  imports: [
+    AuthenticationModule,
+    FeedModule
   ],
+  declarations: [],
   exports: [],
-  providers: [
-  ]
+  providers: []
 })
 export class PagesModule { }

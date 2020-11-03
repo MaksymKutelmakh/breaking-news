@@ -1,0 +1,25 @@
+.users {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    .user {
+        min-width: 240px;
+        padding: 10px;
+        .user-name {
+            font-size: 18pt;
+        }
+        .user-info {
+            .info-name {
+                display: inline;
+                margin-right: 8px;
+            }
+            .user-email, 
+            .user-phone {
+                display: inline;
+            }
+        }
+    }
+
+}

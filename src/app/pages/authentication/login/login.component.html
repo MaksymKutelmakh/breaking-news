@@ -1,0 +1,22 @@
+<div class="login-page">
+    <div class="login-container">
+      <div class="login-form">
+  
+        <form (ngSubmit)="onSubmit(login.value, password.value)">
+          <h2 class="login-label">Login</h2>
+          <div class="login-login">
+            <input #login [formControl]="loginFormControl" matInput autofocus required placeholder="User name">
+          </div>
+          <div class="login-password">
+            <input type="password" #password [formControl]="passwordFormControl" matInput required placeholder="Password">
+          </div>
+          <div *ngIf='error' class="login-error">
+            error
+          </div>
+          <div class="login-submit">
+            <button type="submit" mat-raised-button>Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
